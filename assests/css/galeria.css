@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 * {
     margin: 0;
@@ -35,23 +34,38 @@ header nav a {
 .logo-area img {
   height: 5rem;
 }
-.resumo {
-  color: white;
-  text-align: center; 
-  margin: 8rem;
-  font-size: large;
+
+main {
+    padding: 20px;
 }
 
-.bnt {
-    text-decoration: none;
-    color: rgb(167, 75, 75);
-    display: inline-block;
-    padding: 0.5rem 2rem;
-    background-color: rgba(220, 220, 220, 0.9);
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 40px;
-    transition: 0.3s;
-    margin: 2rem;
+.galeria {
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.galeria-container .foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-container .foto img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
